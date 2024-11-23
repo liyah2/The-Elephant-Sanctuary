@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: all .3s ease;
+}
+
+
+/* Navbar */
+body {
+    margin: 0;
+  }
+
+  .banner {
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(rgba(221,185,144,0.05),rgba(221,185,144,0.01)),url(./Images/image\ \(1\).png);
+    background-size: cover;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    background-attachment: fixed;
+  }
+
+
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 0px 90px;
+    position:sticky;
+    height: 80px;
+    top: 0;
+    
+    
+  }
+
+  .navbar .nav-sec {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }  
+
+  .navbar .nav-sec li {
+    margin: 0 80px;
+    font-size: 20px;
+    
+  }
+
+  .navbar .nav-sec li a {
+    color: black;
+    text-decoration: none;
+    padding: 8px 12px;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+
+  .navbar .nav-sec li a::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #DDB990;
+    transition: width 0.3s ease;
+  }
+
+  .navbar .nav-sec li a:hover::after {
+    width: 295%;}
+
+
+  .navbar .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    /* flex-grow: 1; */
+  }
+
+  .navbar .logo img {
+    height: 500px;
+    width: auto;
+    margin-top: 100px;
+  }
+
+  /* Content */
+
+  .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+
+  }
+
+  .the {
+    position: absolute;
+    top: -60px;
+    left: 59px;
+    font-family: "Orbitron", serif;
+    position: relative;
+    font-size: 30px;
+  }
+
+  .elephant { 
+    font-family: "Bowlby One", serif;
+    font-size: 90px;
+    margin-top: 10px;
+  }
+
+  .sanctuary {
+    font-family: "Bowlby One", serif;
+    font-size: 90px;
+    margin-top: 10px;
+    margin-left: 40px;
+  }
+/* DONATE BUTTON */
+  .donate-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 19px;
+    margin-left: 700px;
+    margin-top: 300px;
+    font-weight: bold;
+    color: #DDB990;
+    background: linear-gradient(45deg, #B45427, #cf5a24);
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .donate-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(45deg, #424436, #6a6e55);
+  }
+
+  .donate-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+ 
+
+
+
+  
