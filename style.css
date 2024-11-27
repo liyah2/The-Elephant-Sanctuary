@@ -17,12 +17,12 @@ body {
 
   .banner {
     width: 100%;
-    height: 80vh;
-    background: linear-gradient(rgba(221,185,144,0.05),rgba(221,185,144,0.01)),url(./Images/image\ \(1\).png);
+    height: 100vh;
+    background: linear-gradient(rgba(221,185,144,0.05),rgba(221,185,144,0.01)),url(./Images/image\ \(3\).png);
     background-size: cover;
     background-position: center;
     /* background-repeat: no-repeat; */
-    background-attachment: fixed;
+    background-attachment:fixed;
   }
 
 
@@ -32,8 +32,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: transparent;
-    padding: 0px 90px;
-    position:sticky;
+    position:relative;
     height: 80px;
     top: 0;
     
@@ -49,6 +48,7 @@ body {
   .navbar .nav-sec li {
     margin: 0 80px;
     font-size: 20px;
+
     
   }
 
@@ -63,16 +63,16 @@ body {
   .navbar .nav-sec li a::after {
     content: '';
     position: absolute;
-    bottom: -15px;
-    left: 0;
+    bottom: 4px;
+    left: 20px;
     width: 0;
     height: 3px;
-    background-color: #DDB990;
+    background-color: #B45427;
     transition: width 0.3s ease;
   }
 
   .navbar .nav-sec li a:hover::after {
-    width: 295%;}
+    width: 285%;}
 
 
   .navbar .logo {
@@ -106,12 +106,14 @@ body {
     font-family: "Orbitron", serif;
     position: relative;
     font-size: 30px;
+    color: #424436;
   }
 
   .elephant { 
     font-family: "Bowlby One", serif;
     font-size: 90px;
     margin-top: 10px;
+    color: #424436;
   }
 
   .sanctuary {
@@ -119,6 +121,7 @@ body {
     font-size: 90px;
     margin-top: 10px;
     margin-left: 40px;
+    color: #424436;
   }
 /* DONATE BUTTON */
   .donate-btn {
@@ -148,7 +151,233 @@ body {
     transform: scale(0.95);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   }
+
+
+/* Media Queries for home */
+
  
+  /* Learning Opp section */
+
+  .learning {
+    margin: 120px;
+    position: relative;
+
+  }
+
+  .learning h1 {
+    text-align: center;
+    padding: 40px;
+    margin-top: -70px;
+    font-size: 50px;
+    color: #424436;
+  }
+
+  .learning p {
+    width: 75%;
+    margin: 0 auto;
+    text-align:justify;
+    padding: 20px;
+    color: #6a6e55;
+  }
+
+  .elephant-img img {
+    width: 1200px;
+    height: 1200px;
+  }
+
+  .elephant-img {
+    margin-top: -500px;
+    margin-bottom:-610px;
+    margin-left: 400px;
+    overflow: hidden;
+  }
+
+  /* Elecam Section */
+  /* #background-video {
+    width: 100vw;
+    height: 60vh;
+    object-fit: cover;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  #vid-overlay {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: ;
+} */
+
+  #background-video {
+    width: 98.6vw;
+    height: 60vh;
+    object-fit: cover;
+    position: relative;
+    left: 10px;
+    top: 20px;
+    bottom: 0;
+    z-index: -1;
+  } 
+  
+  #vid-cont {
+    text-align: center;
+    position: relative;
+  }
+
+  #vid-overlay:before {
+    content:"";
+    position: absolute;
+    top:20px;
+    height: 60vh;
+    right:10px;
+    left:10px;
+    bottom:0;
+    z-index:1;
+    background:linear-gradient(to right,rgba(221,185,144,0.4),rgba(221,185,144,0.8));
+  }
+  
+  #vid-overlay {
+    left: 0%;
+    top: 0%;
+    height: 60vh;
+    width: 100%;
+    position: relative;
+    z-index: -1;
+  }
+
+  .box {
+    height: 65vh;
+    width: 100%;
+    z-index: -2;
+    background-color: #424436;
+    position: absolute;
+  }
+  
+  .elecam {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: #B45427;
+    width: 740px;
+    padding: 20px;
+    z-index:1;
+    background-color: rgba(150,128,99,0.4);
+  }
+
+  .elecam h1 {
+    margin-bottom: 20px;
+    color: #424436;
+    font-size: 60px;
+  }
+
+  .elecam p {
+    color: #424436;
+    width: 500px;
+    text-align: justify;
+    margin-bottom: 40px;
+    font-size: 19px;
+  }
+
+  .watch-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #DDB990;
+    background: linear-gradient(45deg, #B45427, #cf5a24);
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  
+  }
+
+  .watch-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(45deg, #424436, #6a6e55);
+  }
+
+  .watch-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Signup section */
+  .sign-up {
+    max-width: 1800px;
+    height: 250px;
+    margin: 60px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  .sign-up h2 {
+    margin-top: 40px;
+    font-size: 30px;
+    color: #B45427;
+  }
+
+  .sign-up p {
+    font-size: 16px;
+    color: #6a6e55;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  } 
+
+  .form-sec {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 calc(25% - 10px);
+  }
+
+  .form-group input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .sub-btn {
+    flex: 1 1 calc(25% - 2000px); 
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #DDB990;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    height: 45px; 
+  }
+  
+  .sub-btn:hover {
+    background-color: #cf5a24;
+  }
+  
+
+
+ 
+  
+  
 
 
 
