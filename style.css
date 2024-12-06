@@ -59,15 +59,15 @@ body {
     font-size: 20px;
     text-decoration: none;
     padding: 10px 12px;
-    position: relative;
+    position: absolute;
     transition: all 0.3s ease;
   }
 
   .navbar .nav-sec li a::after {
     content: '';
     position: absolute;
-    bottom: 4px;
-    left: 20px;
+    bottom: -8px;
+    left: 0px;
     width: 0;
     height: 3px;
     background-color: #B45427;
@@ -99,8 +99,9 @@ body {
     align-items: center;
     justify-content: center;
     padding: 100px;
-
+    padding-top: 50px;
   }
+
 
   .the {
     position: absolute;
@@ -131,7 +132,7 @@ body {
     display: inline-block;
     padding: 15px 30px;
     font-size: 19px;
-    margin-left: 700px;
+    margin-left: 50%;
     margin-top: 300px;
     font-weight: bold;
     color: #DDB990;
@@ -190,7 +191,7 @@ body {
 
   .elephant-img {
     margin-top: -500px;
-    margin-bottom:-610px;
+    margin-bottom: -610px;
     margin-left: 400px;
     overflow: hidden;
   }
