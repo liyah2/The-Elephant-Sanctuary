@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -8,6 +8,7 @@
     font-family: 'Poppins', sans-serif;
     transition: all .3s ease;
 }
+
 
 
 /* Navbar */
@@ -48,14 +49,16 @@ body {
   .navbar .nav-sec li {
     margin: 0 80px;
     font-size: 20px;
+    font-family: "Rozha One", serif;
 
     
   }
 
   .navbar .nav-sec li a {
     color: black;
+    font-size: 20px;
     text-decoration: none;
-    padding: 8px 12px;
+    padding: 10px 12px;
     position: relative;
     transition: all 0.3s ease;
   }
@@ -283,7 +286,7 @@ body {
     font-size: 19px;
   }
 
-  .watch-btn {
+.watch-btn {
     display: inline-block;
     padding: 15px 30px;
     font-size: 18px;
@@ -296,19 +299,19 @@ body {
     cursor: pointer;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-  
-  }
+}
 
-  .watch-btn:hover {
+.watch-btn:hover {
     transform: scale(1.1);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     background: linear-gradient(45deg, #424436, #6a6e55);
-  }
+}
 
-  .watch-btn:active {
+.watch-btn:active {
     transform: scale(0.95);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  }
+}
+
 
   /* Signup section */
   .sign-up {
@@ -372,6 +375,47 @@ body {
   .sub-btn:hover {
     background-color: #cf5a24;
   }
+
+/* Footer Section */
+  footer {
+    background-color: #424436;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+footer .social-icons {
+    margin: 10px 0;
+    
+}
+footer .social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+footer .social-icons a:hover {
+    color: #cf5a24;
+}
+footer p {
+    margin: 0;
+    font-size: 14px;
+  
+}
+
+.logo-pic {
+  margin-left: 540px;
+  position: absolute;
+}
+
+.logo-pic img {
+  height: 400px;
+  width: auto;
+  margin-top: -180px;
+  overflow: hidden;
+  float: left;
+}
+
   
 
 
